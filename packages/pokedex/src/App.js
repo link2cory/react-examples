@@ -5,8 +5,10 @@ import Pokemon from './components/Pokemon'
 
 function App() {
   return (
-    <div className='App'>
-      <Pokemon />
+    <div>
+      <Pokemon id={1} />
+      <Pokemon id={2} />
+      <Pokemon id={3} />
     </div>
   )
 }
