@@ -53,8 +53,8 @@ export const PokemonContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   border: 1px solid black;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const PokemonAvatar = styled.div`

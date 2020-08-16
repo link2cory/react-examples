@@ -3,7 +3,7 @@ import useSwr from "swr";
 
 import Pokemon from "../Pokemon";
 
-import "./PokemonList.styles.css";
+import { PokemonListContainer } from "./PokemonList.styles";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
@@ -20,11 +20,11 @@ const PokemonList = ({}) => {
   }
 
   return (
-    <div className="pokemonlist-container">
+    <PokemonListContainer>
       {pokemonList.results.map((pokemon) => (
         <Pokemon id={pokemon.name} />
       ))}
-    </div>
+    </PokemonListContainer>
   );
 };
 
