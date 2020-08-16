@@ -1,7 +1,13 @@
 import React from "react";
 import useSwr from "swr";
 
-import "./Pokemon.styles.css";
+import {
+  PokemonContainer,
+  PokemonName,
+  PokemonAvatar,
+  PokemonTypesContainer,
+  PokemonTypeContainer,
+} from "./Pokemon.styles";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
@@ -18,23 +24,19 @@ const Pokemon = ({ id }) => {
   }
 
   return (
-    <div>
-      <h1>{pokemon.name}</h1>
-      <img src={pokemon.sprites.front_default} />
-      <div>
+    <PokemonContainer pokemonTypes={pokemon.types}>
+      <PokemonName pokemonTypes={pokemon.types}>{pokemon.name}</PokemonName>
+      <PokemonAvatar>
+        <img src={pokemon.sprites.front_default} />
+      </PokemonAvatar>
+      <PokemonTypesContainer>
         {pokemon.types.map((t) => (
-          <h3 key={t.type.name}>{t.type.name}</h3>
+          <PokemonTypeContainer key={t.type.name} pokemonType={t.type.name}>
+            {t.type.name}
+          </PokemonTypeContainer>
         ))}
-      </div>
-      <h3>
-        Height:
-        {pokemon.height}
-      </h3>
-      <h3>
-        Weight:
-        {pokemon.weight}
-      </h3>
-    </div>
+      </PokemonTypesContainer>
+    </PokemonContainer>
   );
 };
 
