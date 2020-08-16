@@ -1,14 +1,11 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
-import Pokemon from './components/Pokemon'
+import PokemonList from './components/PokemonList'
 
 function App() {
   return (
     <div>
-      <Pokemon id={1} />
-      <Pokemon id={2} />
-      <Pokemon id={3} />
+      <PokemonList />
     </div>
   )
 }
