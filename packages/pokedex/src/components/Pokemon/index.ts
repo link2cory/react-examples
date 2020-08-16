@@ -1,3 +1,3 @@
-import Pokemon from './Pokemon.component'
+import Pokemon from "./Pokemon.component";
 
-export default Pokemon
+export default Pokemon;

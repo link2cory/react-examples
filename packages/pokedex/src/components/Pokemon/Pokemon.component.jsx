@@ -1,20 +1,20 @@
-import React from 'react'
-import useSwr from 'swr'
+import React from "react";
+import useSwr from "swr";
 
-import './Pokemon.styles.css'
+import "./Pokemon.styles.css";
 
-const fetcher = (url) => fetch(url).then((r) => r.json())
+const fetcher = (url) => fetch(url).then((r) => r.json());
 
 const Pokemon = ({ id }) => {
-  const key = `https://pokeapi.co/api/v2/pokemon/${id}`
-  const { data: pokemon, error } = useSwr(key, fetcher)
+  const key = `https://pokeapi.co/api/v2/pokemon/${id}`;
+  const { data: pokemon, error } = useSwr(key, fetcher);
 
   if (error) {
-    return <div>Error...</div>
+    return <div>Error...</div>;
   }
 
   if (!pokemon) {
-    return <div>Loading...</div>
+    return <div>Loading...</div>;
   }
 
   return (
@@ -35,7 +35,7 @@ const Pokemon = ({ id }) => {
         {pokemon.weight}
       </h3>
     </div>
-  )
-}
+  );
+};
 
-export default Pokemon
+export default Pokemon;

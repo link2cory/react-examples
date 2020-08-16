@@ -1,3 +1,3 @@
-import PokemonList from './PokemonList.component';
+import PokemonList from "./PokemonList.component";
 
 export default PokemonList;
