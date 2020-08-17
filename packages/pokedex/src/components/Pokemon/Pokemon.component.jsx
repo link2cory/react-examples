@@ -24,7 +24,11 @@ const Pokemon = ({ id }) => {
   }
 
   return (
-    <PokemonContainer pokemonTypes={pokemon.types}>
+    <PokemonContainer
+      pokemonTypes={pokemon.types}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <PokemonName pokemonTypes={pokemon.types}>{pokemon.name}</PokemonName>
       <PokemonAvatar>
         <img src={pokemon.sprites.front_default} />

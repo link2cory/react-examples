@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const colors = {
   brand: {
@@ -45,7 +46,7 @@ const colors = {
 };
 
 // background: ${(props) => colors[props.pokemonTypes[0].type.name].medium};
-export const PokemonContainer = styled.div`
+export const PokemonContainer = styled(motion.div)`
   background: ${colors.brand.light_blue};
   box-shadow: 10px 10px 8px ${colors.brand.dark_blue};
   display: flex;
