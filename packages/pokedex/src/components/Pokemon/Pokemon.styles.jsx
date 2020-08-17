@@ -77,7 +77,8 @@ export const PokemonTypesContainer = styled.div`
 `;
 
 export const PokemonTypeContainer = styled.button`
-  background-color: ${(props) => colors[props.pokemonType].dark};
+  background-color: ${(props) =>
+    colors[props.pokemonType] ? colors[props.pokemonType].dark : "black"};
   cursor: pointer;
   color: white;
   padding: 5px;
