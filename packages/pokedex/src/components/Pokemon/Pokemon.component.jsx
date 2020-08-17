@@ -28,6 +28,7 @@ const Pokemon = ({ id }) => {
       pokemonTypes={pokemon.types}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      whileHover={{ scale: 1.5 }}
     >
       <PokemonName pokemonTypes={pokemon.types}>{pokemon.name}</PokemonName>
       <PokemonAvatar>

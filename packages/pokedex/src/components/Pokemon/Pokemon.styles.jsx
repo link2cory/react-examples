@@ -56,6 +56,10 @@ export const PokemonContainer = styled(motion.div)`
   border: 1px solid black;
   width: 100%;
   height: 100%;
+
+  &:hover {
+    z-index: 999;
+  }
 `;
 
 export const PokemonAvatar = styled.div`
