@@ -8,40 +8,95 @@ const colors = {
     light_blue: "#3d7dca",
     dark_blue: "#003a70",
   },
-  grass: {
-    light: "#A7DB8D",
-    medium: "#4E8234",
-    dark: "#4E8234",
+  bug: {
+    light: "#C6D16E",
+    medium: "#A8B820",
+    dark: "#6D7815",
   },
-  poison: {
-    light: "#C183C1",
-    medium: "#A040A0",
-    dark: "#682A68",
+  dark: {
+    light: "#A29288",
+    medium: "#705848",
+    dark: "#49392F",
+  },
+  dragon: {
+    light: "#A27DFA",
+    medium: "#7038F8",
+    dark: "#4924A1",
+  },
+  electric: {
+    light: "#FAE078",
+    medium: "#F8D030",
+    dark: "#A1871F",
+  },
+  fairy: {
+    light: "#F4BDC9",
+    medium: "#EE99AC",
+    dark: "#9B6470",
+  },
+  fighting: {
+    light: "#D67873",
+    medium: "#C03028",
+    dark: "#7D1F1A",
   },
   fire: {
     light: "#F5AC78",
     medium: "#F08030",
     dark: "#9C531F",
   },
-  water: {
-    light: "#9DB7F5",
-    medium: "#6890F0",
-    dark: "#445E9C",
+  flying: {
+    light: "#C6B7F5",
+    medium: "#A890F0",
+    dark: "#6D5E9C",
   },
-  bug: {
-    light: "#C6D16E",
-    medium: "#A8B820",
-    dark: "#6D7815",
+  ghost: {
+    light: "#A292BC",
+    medium: "#705898",
+    dark: "#493963",
+  },
+  grass: {
+    light: "#A7DB8D",
+    medium: "#4E8234",
+    dark: "#4E8234",
+  },
+  ground: {
+    light: "#EBD69D",
+    medium: "#E0C068",
+    dark: "#927D44",
+  },
+  ice: {
+    light: "#BCE6E6",
+    medium: "#98D8D8",
+    dark: "#638D8D",
   },
   normal: {
     light: "#C6C6A7",
     medium: "#A8A878",
     dark: "#6D6D4E",
   },
-  flying: {
-    light: "#C6B7F5",
-    medium: "#A890F0",
-    dark: "#6D5E9C",
+  poison: {
+    light: "#C183C1",
+    medium: "#A040A0",
+    dark: "#682A68",
+  },
+  psychic: {
+    light: "#FA92B2",
+    medium: "#F85888",
+    dark: "#A13959",
+  },
+  rock: {
+    light: "#D1C17D",
+    medium: "#B8A038",
+    dark: "#786824",
+  },
+  steel: {
+    light: "#D1D1E0",
+    medium: "#B8B8D0",
+    dark: "#787887",
+  },
+  water: {
+    light: "#9DB7F5",
+    medium: "#6890F0",
+    dark: "#445E9C",
   },
 };
 
