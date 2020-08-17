@@ -48,7 +48,7 @@ const colors = {
 // background: ${(props) => colors[props.pokemonTypes[0].type.name].medium};
 export const PokemonContainer = styled(motion.div)`
   background: ${colors.brand.light_blue};
-  box-shadow: 10px 10px 8px ${colors.brand.dark_blue};
+  box-shadow: 1px 1px 1px black;
   display: flex;
   flex-direction: column;
   align-items: center;
